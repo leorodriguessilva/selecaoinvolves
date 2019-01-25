@@ -7,7 +7,9 @@ public class Pesquisa {
 	private String notificante;
 	private String ponto_de_venda;
 	private String produto;
+	private String categoria;
 	private String preco_estipulado;
+	private String participacao_estipulada;
 	private List<Resposta> respostas;
 	
 	public int getId() {
@@ -46,10 +48,23 @@ public class Pesquisa {
 	public void setProduto(String produto) {
 		this.produto = produto;
 	}
+	public String getCategoria() {
+		return categoria;
+	}
+	public void setCategoria(String categoria) {
+		this.categoria = categoria;
+	}
 	public String getPreco_estipulado() {
 		return preco_estipulado;
 	}
 	public void setPreco_estipulado(String preco_estipulado) {
 		this.preco_estipulado = preco_estipulado;
 	}
+	public String getParticipacao_estipulada() {
+		return participacao_estipulada;
+	}
+	public void setParticipacao_estipulada(String participacao_estipulada) {
+		this.participacao_estipulada = participacao_estipulada;
+	}
+	
 }
