@@ -1,5 +1,7 @@
 package com.involves.selecao.geradordealerta.impl;
 
+import java.util.Date;
+
 public class Produto {
 
 	private String resposta;
@@ -13,6 +15,8 @@ public class Produto {
 	private String precoEstipulado;
 	
 	private String participacaoEstipulada;
+	
+	private Date respondidaEm;
 
 	public String getResposta() {
 		return resposta;
@@ -60,6 +64,14 @@ public class Produto {
 
 	public void setParticipacaoEstipulada(String participacaoEstipulada) {
 		this.participacaoEstipulada = participacaoEstipulada;
+	}
+
+	public Date getRespondidaEm() {
+		return respondidaEm;
+	}
+
+	public void setRespondidaEm(Date respondidaEm) {
+		this.respondidaEm = respondidaEm;
 	}
 	
 }

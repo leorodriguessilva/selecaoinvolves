@@ -70,7 +70,8 @@ public class GeradorDeAlertaPreco extends GeradorDeAlertaAbstrato {
 		    alerta.setDescricao("Preço abaixo do estipulado!");
 		    alerta.setFlTipo(3);
 		}
-		
+
+		alerta.setRespondidaEm(getProduto().getRespondidaEm());
 		alerta.setMargem(margem);
 		return alerta;
 	}

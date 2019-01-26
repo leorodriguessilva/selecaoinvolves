@@ -81,6 +81,7 @@ public class ProcessadorDePequisaReal implements ProcessadorDePesquisa {
 		produto.setParticipacaoEstipulada(pesquisa.getParticipacao_estipulada());
 		produto.setResposta(resposta.getResposta());
 		produto.setNomeDaCategoria(pesquisa.getCategoria());
+		produto.setRespondidaEm(pesquisa.getRespondida_em());
 		return produto;
 	}
 

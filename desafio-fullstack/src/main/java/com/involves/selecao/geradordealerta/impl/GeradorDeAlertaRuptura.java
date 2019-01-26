@@ -25,6 +25,7 @@ public class GeradorDeAlertaRuptura extends GeradorDeAlertaAbstrato {
 	    alerta.setDescricao("Ruptura detectada!");
 	    alerta.setProduto(getProduto().getNomeDoProduto());
 	    alerta.setFlTipo(1);
+		alerta.setRespondidaEm(getProduto().getRespondidaEm());
 	    salvarAlerta(alerta);
 	}
 

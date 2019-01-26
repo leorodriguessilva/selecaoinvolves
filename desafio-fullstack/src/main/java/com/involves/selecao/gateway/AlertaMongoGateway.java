@@ -28,6 +28,7 @@ public class AlertaMongoGateway implements AlertaGateway{
                 .append("tipo", alerta.getFlTipo())
                 .append("margem", alerta.getMargem())
                 .append("produto", alerta.getProduto())
+                .append("respondida_em", alerta.getRespondidaEm())
                 .append("categoria", alerta.getCategoria());
 		collection.insertOne(doc);
 	}
@@ -46,6 +47,7 @@ public class AlertaMongoGateway implements AlertaGateway{
 			alerta.setPontoDeVenda(document.getString("ponto_de_venda"));
 			alerta.setProduto(document.getString("produto"));
 			alerta.setCategoria(document.getString("categoria"));
+			alerta.setRespondidaEm(document.getDate("respondida_em"));
 			alertas.add(alerta);
 		}
 		return alertas;

@@ -1,4 +1,5 @@
 package com.involves.selecao.alerta;
+import java.util.Date;
 import java.util.List;
 
 public class Pesquisa {
@@ -10,6 +11,7 @@ public class Pesquisa {
 	private String categoria;
 	private String preco_estipulado;
 	private String participacao_estipulada;
+	private Date respondida_em;
 	private List<Resposta> respostas;
 	
 	public int getId() {
@@ -65,6 +67,12 @@ public class Pesquisa {
 	}
 	public void setParticipacao_estipulada(String participacao_estipulada) {
 		this.participacao_estipulada = participacao_estipulada;
+	}
+	public Date getRespondida_em() {
+		return respondida_em;
+	}
+	public void setRespondida_em(Date respondida_em) {
+		this.respondida_em = respondida_em;
 	}
 	
 }

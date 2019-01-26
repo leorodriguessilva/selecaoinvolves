@@ -1,5 +1,7 @@
 package com.involves.selecao.alerta;
 
+import java.util.Date;
+
 public class Alerta {
 	
 	private String pontoDeVenda;
@@ -8,6 +10,7 @@ public class Alerta {
 	private String categoria;
 	private Integer flTipo;
 	private Integer margem;
+	private Date respondidaEm;
 	
 	public String getPontoDeVenda() {
 		return pontoDeVenda;
@@ -45,4 +48,11 @@ public class Alerta {
 	public void setMargem(Integer margem){
 		this.margem = margem;
 	}
+	public Date getRespondidaEm() {
+		return respondidaEm;
+	}
+	public void setRespondidaEm(Date respondidaEm) {
+		this.respondidaEm = respondidaEm;
+	}
+	
 }

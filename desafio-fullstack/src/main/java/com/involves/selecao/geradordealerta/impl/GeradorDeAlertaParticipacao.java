@@ -65,6 +65,7 @@ public class GeradorDeAlertaParticipacao extends GeradorDeAlertaAbstrato {
 		    alerta.setFlTipo(5);
 		}
 		
+		alerta.setRespondidaEm(getProduto().getRespondidaEm());
 		alerta.setMargem(margem);
 		return alerta;
 	}
